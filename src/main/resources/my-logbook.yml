@@ -1,0 +1,19 @@
+logbook:
+  custom:
+    # 开启 logbook
+    enabled: true
+    request:
+      # 请求头 header 策略
+      headerStrategy: DEFAULT
+    response:
+      # 响应体 header 策略
+      headerStrategy: DEFAULT
+  write:
+    # 输出大小
+    max-body-size: 2048
+  exclude:
+    # 排除输出日志的路径
+    - /actuator/health
+  format:
+    # 日志格式
+    style: json
